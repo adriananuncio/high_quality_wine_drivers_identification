@@ -1,5 +1,6 @@
-# # # Wine Classification Project
+# Wine Classification Project
 Adriana Nuncio, Mack McGlenn
+
 Codeup: O'neil Cohort
 
 ### Project Overview
