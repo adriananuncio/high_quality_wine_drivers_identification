@@ -104,6 +104,7 @@ def clusters_sc(df, v1, v2):
     return df
 
 def change_clusters(df, v1, v2):
+    """ This function returns a list showing how changing the number of clusters impacts the inertia"""
     inertia= []
     for n in range (2, 10):
         # Making object
@@ -112,7 +113,7 @@ def change_clusters(df, v1, v2):
         kmc.fit(df[[v1, v2]])
         inertia.append(kmc.inertia_)
     # return inertia
-    i_results = pd.DataFrame({'n_clusters': n,
+    i_results = pd.DataFrame({'n_clusters': list(range(2, 10)),
                                   'inertia': inertia})
 
     return i_results
