@@ -102,3 +102,17 @@ def clusters_sc(df, v1, v2):
     df['cluster_sc'] = kmeans.predict(df)
     
     return df
+
+def change_clusters(df, v1, v2):
+    inertia= []
+    for n in range (2, 10):
+        # Making object
+        kmc = KMeans(n_clusters = n, random_state= 123 )
+        # Fitting object
+        kmc.fit(df[[v1, v2]])
+        inertia.append(kmc.inertia_)
+    # return inertia
+    i_results = pd.DataFrame({'n_clusters': n,
+                                  'inertia': inertia})
+
+    return i_results
