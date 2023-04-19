@@ -312,5 +312,14 @@ def rw_fsd_x_ph(train):
     plt.show()
     
     
-    
+def cluster_vis():
+    plt.figure(figsize=[10,5])
+    plt.subplot(121)
+    plt.title('Clustered % Alcohol x Wine Quality')
+    sns.scatterplot(data=df, x='quality', y='alcohol', hue='cluster', palette='rocket')
+    plt.subplot(122)
+    plt.title('Clustered % Alcohol x Wine Quality')
+    sns.barplot(data=df, x='quality', y='alcohol', hue='cluster', palette='rocket')
+    plt.tight_layout()
+    plt.show()
     
