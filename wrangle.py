@@ -84,6 +84,16 @@ def split_wine(df, target):
     # And indicate that you want it on one axis!!!!)
     
     return train_sc, val_sc, test_sc 
+
+############# Statistical Analysis ######
+
+def sulphates_redwhite(train):
+    """ This function returns a barplot that measures differences in sulphate amounts in red and white wines"""
+    sb.barplot(data= train, x='quality', y= 'sulphates', hue='type', color = 'indianred', ec='black')
+    plt.title(' Sulphate Range in Red and White Wine Quality Scores')
+    plt.xlabel('Quality Score')
+    plt.ylabel('Sulphate Range')
+    plt.show()
   
 ############# Clustering ################
 def clusters_sc(df, v1, v2):
