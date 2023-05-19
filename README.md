@@ -115,3 +115,17 @@ Here are the steps I took during the exploration phase:
     
  
 ### Modeling
+
+
+
+
+
+
+_________________________________________________________________________________________________________________________
+
+### Steps to Reproduce
+
+   1. Clone this repo.
+   2. Acquire the data from [data.world](https://data.world/food/wine-quality)
+   3. Put the data in the file containing the cloned repo.
+   4. Run notebook.
