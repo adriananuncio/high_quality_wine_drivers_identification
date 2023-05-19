@@ -1,4 +1,5 @@
-# Wine Classification Project
+# High Quality Wine Drivers
+## Using Classification Modeling to Predict the Quality of Vino Verde Wine Variants
 Adriana Nuncio, Mack McGlenn
 
 Codeup: O'neil Cohort
